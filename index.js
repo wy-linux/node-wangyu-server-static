@@ -20,6 +20,7 @@ function serverStatic(rootName, options = {}) {
         }
         staticStream.pipe(res)
         staticStream.on('error', (err) => {
+            console.log(err)
             next()
         })
     }

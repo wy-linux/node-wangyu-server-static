@@ -20,6 +20,7 @@ http://127.0.0.1:80
 在前端History Router时，用户手动刷新页面会向后端发送请求。
 + pathRewrite：1 时，'/'下面无法正常访问的路径都会重定向到'/index.html'
 + pathRewrite：2 时，'/***/'下面无法正常访问的路径都会重定向到'/index.html'
++ ......
 ```javascript
  fs.stat(pathJoin, (err, stat) => {
             if(err) {//路径错误没有资源
